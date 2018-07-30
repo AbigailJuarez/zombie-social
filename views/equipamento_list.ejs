@@ -1,0 +1,28 @@
+<%include _header%>
+
+<h1>Armas registradas</h1>
+
+<% equipamento.forEach((equipament)=>{ %>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a>
+        <label class="col-form-label">Equipamiento:</label>
+            <%= equipament.descripcion %>
+        </a>
+    </div>
+    <div class="row" class="panel-body">
+        <label class="col-md-1 col-form-label">defensa:</label>
+        <label class="col-form-label"><%= equipament.defensa %></label>
+    </div>
+    <div class="row">
+        <label class="col-md-1 col-form-label">categoria:</label>
+        <label class="col-form-label"><%= equipament.categoria %></label>
+    </div>
+    <div class="row">
+        <label class="col-md-1 col-form-label">peso:</label>
+        <label class="col-form-label"><%= equipament.peso %></label>
+    </div>
+</div>
+<% }) %>
+
+<%include _footer%>
