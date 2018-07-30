@@ -13,7 +13,7 @@ var routes=require("./routes");
 var passportsetup=require("./passportsetup");
 var app=express();
 
-mongoose.connect("mongodb://localhost:27017/zombie_nest");
+mongoose.connect("mongodb://AbigailJ:ISWUnipoli123@ds159631.mlab.com:59631/zombie_nest");
 
 passportsetup();
 
