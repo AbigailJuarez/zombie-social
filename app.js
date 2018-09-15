@@ -32,7 +32,7 @@ app.use(session({
 app.use(flash());
 
 app.use(passport.initialize({
-    userProperty:"zombie"
+    userProperty:"ringo"
 }));
 app.use(passport.session());
 
